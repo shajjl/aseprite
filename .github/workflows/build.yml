@@ -8,8 +8,8 @@ jobs:
       matrix:
         os: [windows-latest]
         build_type: [RelWithDebInfo]
-        ui: [cli]
-        scripting: [noscripts]
+        ui: [gui]
+        scripting: [lua]
         exclude:
           - build_type: Debug
             ui: gui
