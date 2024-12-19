@@ -109,3 +109,10 @@ jobs:
         export ASEPRITE=$PWD/build/bin/aseprite
         cd tests
         $XVFB bash run-tests.sh
+    - uses: actions/upload-artifact@v3
+      with:
+        name: aseprite
+        path: |
+          libcrypto-1_1-x64.dll
+          D:/a/aseprite/aseprite/build/bin/data
+          D:/a/aseprite/aseprite/build/bin/aseprite.exe
